@@ -11,7 +11,7 @@ public:
 	void go();
 	void stop(int object_speed);
 	void now_state();
-	Car(int car_num ,string name = "LAS",int tire_num=4, int break_num=2,int handle_num=1) {
+	Car(int car_num ,string name = "LAS",int tire_num=4, int break_num=2,double tire_size=0.6f,int handle_num=1) {
 		
 	};
 private:
@@ -20,6 +20,8 @@ private:
 		this->owner_name = name;
 	};
 	void set_inside(int tire_num, int break_num, int handle_num) {
+		if (break_num == 1 && tire_num != 1)
+			break_num++;
 		this->hendling=inside_control();
 	}
     int hash_tag;
@@ -30,14 +32,21 @@ private:
 };
 
 class inside_control {
-
+public:
+	inside_control() {
+		
+	}
 private:
 	vector<Tire> tires;
 	Handle handle;
 
 };
+
 class Tire {
 public:
+	Tire(double size, int location) {
+		set_first(size, location);
+	};
 	int get_speed() {
 		return (this->now_RPM)*tire_size*60;
 	};
@@ -45,6 +54,13 @@ public:
 
 	};
 private:
+	void set_first(double size, int state) {
+		this->now_state = state;
+		this->now_angle = 0;
+		this->now_RPM = 0;
+		this->tire_size = size;
+	};
+
 	int now_RPM;
 	int now_angle;
 	int now_state;
