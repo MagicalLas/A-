@@ -5,19 +5,30 @@
 
 using namespace std;
 
-/*
+
 class Car{
 public:
 	void go();
 	void stop(int object_speed);
 	void now_state();
+	Car(int car_num ,string name = "LAS",int tire_num=4, int break_num=2,int handle_num=1) {
+		
+	};
 private:
+	void set_first(string name, int hash) {
+		this->hash_tag = hash;
+		this->owner_name = name;
+	};
+	void set_inside(int tire_num, int break_num, int handle_num) {
+		this->hendling=inside_control();
+	}
     int hash_tag;
 	string owner_name;
 	inside_control hendling;
 	int weight;
 
 };
+
 class inside_control {
 
 private:
@@ -40,6 +51,7 @@ private:
 	//size = meter
 	double tire_size;
 };
+
 class Breake {
 public:
 	bool i_want_stop(int object_speed, int progress_time) {
@@ -76,16 +88,11 @@ private:
 };
 static class Ground {
 private:
-	int ¸¶Âû°è¼ö = 1;
-	
+	static const int ¸¶Âû°è¼ö = 10;
+	static const int °ø±âÀúÇ× = 1;
 };
-*/
-void loop(int n) {
-	if (n > 100000000)
-		return;
-	cout << n << endl;
-	loop(n+1);
-};
+
+
 int main() {
-	loop(-20000);
+
 }
