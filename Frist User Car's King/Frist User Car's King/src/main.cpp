@@ -2,8 +2,16 @@
 #include<string>
 #include<vector>
 #include<thread>
+#include<future>
+#include <variant>
+#include <stdexcept>
+
+#include<experimental\coroutine>
+#include<experimental\generator>
+#include<experimental\xutility>
 
 using namespace std;
+
 
 
 class Car{
@@ -15,11 +23,11 @@ public:
 		
 	};
 private:
-	void set_first(string name, int hash) {
+	[noreturn]void set_first(string name, int hash) {
 		this->hash_tag = hash;
 		this->owner_name = name;
 	};
-	void set_inside(int tire_num, int break_num, int handle_num) {
+	[noreturn]void set_inside(int tire_num, int break_num, int handle_num) {
 		if (break_num == 1 && tire_num != 1)
 			break_num++;
 		this->hendling=inside_control();
@@ -41,16 +49,15 @@ private:
 	Handle handle;
 
 };
-
 class Tire {
 public:
 	Tire(double size, int location) {
 		set_first(size, location);
 	};
-	int get_speed() {
+	[nodiscard]int get_speed() {
 		return (this->now_RPM)*tire_size*60;
 	};
-	void accel_speed(int object_RPM) {
+	[noreturn]void accel_speed(int object_RPM) {
 
 	};
 private:
@@ -103,9 +110,10 @@ private:
 
 };
 static class Ground {
+public:
 private:
-	static const int 마찰계수 = 10;
-	static const int 공기저항 = 1;
+	static const int time_min = 10;
+	static const int move_min = 1;
 };
 
 
