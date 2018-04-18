@@ -19,18 +19,20 @@ public:
 	void go();
 	void stop(int object_speed);
 	void now_state();
-	Car(int car_num ,string name = "LAS",int tire_num=4, int break_num=2,double tire_size=0.6f,int handle_num=1) {
-		
+	Car(int car_num ,string name = "LAS",int tire_num=4, int break_num=2,double tire_size=0.6f,int handle_num=1,int handle_size=50) {
+		set_first(name, car_num);
+		set_inside(tire_num, break_num, handle_num,tire_size,handle_size);
+
 	};
 private:
 	[noreturn]void set_first(string name, int hash) {
 		this->hash_tag = hash;
 		this->owner_name = name;
 	};
-	[noreturn]void set_inside(int tire_num, int break_num, int handle_num) {
+	[noreturn]void set_inside(int tire_num, int break_num, int handle_num, int tire_size, int handle_size) {
 		if (break_num == 1 && tire_num != 1)
 			break_num++;
-		this->hendling=inside_control();
+		this->hendling=inside_control(tire_num,tire_size);
 	}
     int hash_tag;
 	string owner_name;
@@ -41,13 +43,21 @@ private:
 
 class inside_control {
 public:
-	inside_control() {
-		
+	inside_control(int tire_num, int tire_size=0.5, int handle_num=1,int handle_size=50) {
+		for(int for_i=0;tire_num>for_i;for_i++)
+		{
+			tires[for_i] = Tire(0.5, for_i+1);
+		}
+		for (int i = 0; i < handle_num; i++)
+		{
+
+		}
 	}
 private:
 	vector<Tire> tires;
 	Handle handle;
-
+	//거의 사용하지 않음
+	Handle handle2;
 };
 class Tire {
 public:
