@@ -1,5 +1,6 @@
 ﻿  Stream.cpp
-c:\users\haho6\desktop\a-\scream-snake\src\stream.cpp(5): error C2898: 'a iterable::net(void)': 멤버 함수 템플릿은 가상일 수 없습니다.
+c:\users\haho6\desktop\a-\scream-snake\src\stream.cpp(24): warning C4930: 'Stream w(void)': 프로토타입 함수가 호출되지 않았습니다. 변수 정의로 사용하려고 한 것은 아닌지 확인하십시오.
   main.cpp
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\variant(16): fatal error C1189: #error:  class template variant is only available with C++17.
+c:\users\haho6\desktop\a-\frist user car's king\frist user car's king\src\main.cpp(1): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
   코드를 생성하고 있습니다...
+  Frist User Car's King.vcxproj -> C:\Users\haho6\Desktop\A-\Frist User Car's King\Debug\Frist User Car's King.exe

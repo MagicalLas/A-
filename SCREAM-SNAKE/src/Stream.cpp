@@ -1,15 +1,36 @@
 #include<stdio.h>
+#include<functional>
+#include<vector>
 
-
-
-
-class Stream {
+using namespace std;
+class IntStream {
 public:
-};
-class w {
-public:
-	int net() { return 5; };
-};
+	IntStream() {};
+	IntStream(int function_num_, vector<function> &will_do_func) { 
+		function_num = function_num_; 
+		this->function_vec = will_do_func;
+	};
+	IntStream iterater(int a, function<int(int)> f) {
+		function_vec[function_num] = f;
+		first_num = a;
+		return this;
+	};
+	int do_it() {
+		int num = this->first_num;
+		for (size_t i = 0; i < function_num; i++)
+		{
+			function_vec[i](num);
+		}
+		return num;
+	}
+private:
+	int first_num;
+	int function_num;
+	vector<function> function_vec;
+}; 
+
 int main() {
-	Stream(w());
+	IntStream a;
+	int n=a.iterater(1, [](int x)->{return x+1}).do_it();
+	cout << n << "asd";
 }
