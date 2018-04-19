@@ -1,4 +1,5 @@
-﻿  main.cpp
-  Car.cpp
+﻿  Stream.cpp
+c:\users\haho6\desktop\a-\scream-snake\src\stream.cpp(5): error C2898: 'a iterable::net(void)': 멤버 함수 템플릿은 가상일 수 없습니다.
+  main.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\variant(16): fatal error C1189: #error:  class template variant is only available with C++17.
   코드를 생성하고 있습니다...
-  Frist User Car's King.vcxproj -> C:\Users\haho6\Desktop\A-\Frist User Car's King\Debug\Frist User Car's King.exe
