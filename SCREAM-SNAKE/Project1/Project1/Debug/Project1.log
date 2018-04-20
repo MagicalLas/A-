@@ -1,6 +1,2 @@
 ﻿  Project1.cpp
-c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(35): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
-  c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(46): note: 컴파일 중인 클래스 템플릿 인스턴스화 'IntStream<f>'에 대한 참조를 확인하세요.
-c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(35): error C2800: 'operator .'을(를) 오버로드할 수 없습니다.
-c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(35): error C2333: 'IntStream<f>::operator .': 함수 선언에 오류가 있습니다. 함수 본문을 건너뜁니다.
-c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(35): error C2333: 'IntStream<std::function<int (int)>>::operator .': 함수 선언에 오류가 있습니다. 함수 본문을 건너뜁니다.
+  Project1.vcxproj -> C:\Users\haho6\Desktop\A-\SCREAM-SNAKE\Project1\Debug\Project1.exe
