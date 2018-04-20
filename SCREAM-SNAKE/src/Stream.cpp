@@ -6,36 +6,41 @@
 #include<vector>
 
 using namespace std;
+
+template<typename f = function<int(void)>>
 class IntStream {
 public:
-	IntStream() {
-		function_num = 0;
+	IntStream(f func) {
+		this->first_num = 1;
+		this->func = func;
 	};
-	IntStream(int function_num_, vector<function<int(int)>> will_do_func) {
-		function_num = function_num_;
-		this->function_vec = will_do_func;
+
+	IntStream map(function<int(int)>) {
+
 	};
-	IntStream iterater(int a, function<int(int)> f) {
-		function_vec[function_num] = f;
-		first_num = a;
-		return *this;
+	IntStream filter(function<bool(int)>) {
 	};
+	IntStream limit(int number) {
+
+	};
+	IntStream foreach(function<void(int)>) {
+
+	};
+	IntStream reduce(function<int(int, int)>) {
+
+	};
+	IntStream iterator(function<int(int)>) {
+	};
+
 	int do_it() {
 		int num = this->first_num;
-		for (int i = 0; i < function_num; i++)
-		{
-			function_vec[i](num);
-		}
+		num = func(num);
 		return num;
 	}
 private:
 	int first_num;
 	int function_num;
-	vector<function<int(int)>> function_vec;
+	f func;
 };
-
 int main() {
-	IntStream a;
-	int n = a.iterater(1, [](int x)->int {return x + 1; }).do_it();
-	cout << n << "wqe";
 }
