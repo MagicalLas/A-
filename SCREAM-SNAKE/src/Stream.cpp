@@ -4,43 +4,29 @@
 #include<stdio.h>
 #include<functional>
 #include<vector>
+#include<experimental\coroutine>
 
 using namespace std;
 
-template<typename f = function<int(void)>>
-class IntStream {
-public:
-	IntStream(f func) {
-		this->first_num = 1;
-		this->func = func;
-	};
 
-	IntStream map(function<int(int)>) {
-
-	};
-	IntStream filter(function<bool(int)>) {
-	};
-	IntStream limit(int number) {
-
-	};
-	IntStream foreach(function<void(int)>) {
-
-	};
-	IntStream reduce(function<int(int, int)>) {
-
-	};
-	IntStream iterator(function<int(int)>) {
-	};
-
-	int do_it() {
-		int num = this->first_num;
-		num = func(num);
-		return num;
+struct intS
+{
+	vector<int>::iterator left;
+	vector<int>::iterator right;
+	void set(vector<int>::iterator l, vector<int>::iterator r) {
+		left = l;
+		right = r;
 	}
-private:
-	int first_num;
-	int function_num;
-	f func;
+	void print() noexcept {
+		for (auto i = left; i != right; ++i)
+		{
+			cout << *i << ",";
+		}
+	};
+	void map(function<int(int)> f) noexcept {
+		for (auto i = left; i != right; ++i)
+		{
+			cout << f(*i) << ",";
+		}
+	};
 };
-int main() {
-}
