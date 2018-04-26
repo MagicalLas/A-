@@ -1,2 +1,6 @@
 ﻿  Project1.cpp
+c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(97): warning C4101: 'a' :참조되지 않은 지역 변수입니다.
+  c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(85): note: 클래스 템플릿 멤버 함수 'Monad<int> Monad<int>::operator /(Monad<int>)'을(를) 컴파일하고 있습니다.
+  c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(118): note: 컴파일 중인 함수 템플릿 인스턴스화 'Monad<int> Monad<int>::operator /(Monad<int>)'에 대한 참조를 확인하십시오.
+  c:\users\haho6\desktop\a-\scream-snake\project1\project1\project1.cpp(116): note: 컴파일 중인 클래스 템플릿 인스턴스화 'Monad<int>'에 대한 참조를 확인하세요.
   Project1.vcxproj -> C:\Users\haho6\Desktop\A-\SCREAM-SNAKE\Project1\Debug\Project1.exe
