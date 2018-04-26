@@ -145,7 +145,6 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="IntStream.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Project1.cpp" />
