@@ -1,3 +1,3 @@
 ﻿  Stream_Play.cpp
-c:\users\haho6\desktop\a-\scream-snake\stream_play\stream_play\stream_play.cpp(146): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\haho6\desktop\a-\scream-snake\stream_play\stream_play\stream_play.cpp(147): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Stream_Play.vcxproj -> C:\Users\haho6\Desktop\A-\SCREAM-SNAKE\Stream_Play\Debug\Stream_Play.exe
