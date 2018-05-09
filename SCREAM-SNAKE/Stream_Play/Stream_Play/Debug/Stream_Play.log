@@ -1,3 +1,5 @@
 ﻿  Stream.cpp
-c:\users\haho6\desktop\a-\scream-snake\stream_play\stream_play\stream.cpp(5): error C2871: 'Stream': 같은 이름을 가진 네임스페이스가 없습니다.
-c:\users\haho6\desktop\a-\scream-snake\stream_play\stream_play\stream.cpp(6): error C2653: 'IntStream': 클래스 또는 네임스페이스 이름이 아닙니다.
+  Stream_Play.cpp
+c:\users\haho6\desktop\a-\scream-snake\stream_play\stream_play\stream_play.cpp(145): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  코드를 생성하고 있습니다...
+  Stream_Play.vcxproj -> C:\Users\haho6\Desktop\A-\SCREAM-SNAKE\Stream_Play\Debug\Stream_Play.exe
