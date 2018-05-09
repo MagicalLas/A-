@@ -45,4 +45,4 @@ Stream::IntStream Stream::IntStream::iterator(std::function<int(int)> f, int ini
 	IntStream s;
 	s.set(vec);
 	return s;
-}
+};
