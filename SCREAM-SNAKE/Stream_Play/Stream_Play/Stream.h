@@ -1,6 +1,7 @@
 #pragma once
 #include<vector>
 #include<functional>
+#include"Wrapper.h"
 namespace Stream {
 	class IntStream {
 	private:
@@ -14,5 +15,6 @@ namespace Stream {
 		int sum() noexcept;
 		int reduce(std::function<int(int, int)> f);
 		IntStream iterator(std::function<int(int)> f, int initialize, int num);
+		IntStream map(Stream_::Wrapper<int>(*las)(Stream_::Wrapper<int> v)) noexcept;
 	};
 }
