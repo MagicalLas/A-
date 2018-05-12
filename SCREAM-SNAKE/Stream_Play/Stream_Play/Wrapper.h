@@ -13,4 +13,10 @@ namespace Stream_ {
 		};
 		bool operator==(int v);
 	};
+
+	Stream_::Wrapper<int> operator+(Stream_::Wrapper<int> w ,int v);
+	Stream_::Wrapper<int> operator-(Stream_::Wrapper<int> w, int v);
+	Stream_::Wrapper<int> operator*(Stream_::Wrapper<int> w, int v);
+	Stream_::Wrapper<int> operator/(Stream_::Wrapper<int> w, int v);
+	bool operator==(Stream_::Wrapper<int> w, int v);
 }
