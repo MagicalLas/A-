@@ -8,15 +8,15 @@ namespace Stream_ {
 		Stream_::Wrapper<int> operator*(int v);
 		Stream_::Wrapper<int> operator-(int v);
 		Stream_::Wrapper<int> operator+(int v);
-		Wrapper<int>(int value) {
+		Wrapper(int value) {
 			this->value = value;
 		};
 		bool operator==(int v);
 	};
 
-	Stream_::Wrapper<int> operator+(Stream_::Wrapper<int> w ,int v);
-	Stream_::Wrapper<int> operator-(Stream_::Wrapper<int> w, int v);
-	Stream_::Wrapper<int> operator*(Stream_::Wrapper<int> w, int v);
-	Stream_::Wrapper<int> operator/(Stream_::Wrapper<int> w, int v);
-	bool operator==(Stream_::Wrapper<int> w, int v);
+	Stream_::Wrapper<int> operator+(int v, Stream_::Wrapper<int> w);
+	Stream_::Wrapper<int> operator-(int v, Stream_::Wrapper<int> w);
+	Stream_::Wrapper<int> operator*(int v, Stream_::Wrapper<int> w);
+	Stream_::Wrapper<int> operator/(int v, Stream_::Wrapper<int> w);
+	bool operator==(int v, Stream_::Wrapper<int> w);
 }

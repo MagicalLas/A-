@@ -46,7 +46,7 @@ Stream::IntStream Stream::IntStream::iterator(std::function<int(int)> f, int ini
 	s.set(vec);
 	return s;
 };
-Stream::IntStream Stream::IntStream::map(Stream_::Wrapper<int>(*function)(Stream_::Wrapper<int> v)) {
+Stream::IntStream Stream::IntStream::map (Stream_::Wrapper<int>(*function)(Stream_::Wrapper<int> v)) noexcept {
 	for (auto i = left; i != right; ++i)
 	{
 		Stream_::Wrapper<int> a = *i;
