@@ -8,4 +8,13 @@ Stream_::Wrapper<int> Stream_::Wrapper<int>::operator/(int v) {
 };
 Stream_::Wrapper<int> Stream_::Wrapper<int>::operator*(int v) {
 	return (value*v);
-}
+};
+Stream_::Wrapper<int> Stream_::Wrapper<int>::operator+(int v) {
+	return (value+v);
+};
+Stream_::Wrapper<int> Stream_::Wrapper<int>::operator-(int v) {
+	return (value-v);
+};
+bool Stream_::Wrapper<int>::operator==(int v) {
+	return (value==v);
+};
