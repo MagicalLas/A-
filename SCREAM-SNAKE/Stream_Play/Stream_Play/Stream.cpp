@@ -55,7 +55,7 @@ Stream::IntStream Stream::IntStream::map (Stream_::Wrapper<int>(*function)(Strea
 	};
 	return *this;
 }
-
+	
 int Stream::IntStream::reduce(Stream_::Wrapper<int>(*las)(int acc, Stream_::Wrapper<int>v), int origin) noexcept
 {
 	int result = origin;
