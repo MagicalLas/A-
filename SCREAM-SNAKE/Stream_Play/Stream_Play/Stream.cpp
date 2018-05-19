@@ -28,13 +28,6 @@
 	}
 	return acc;
 };
-int Stream::IntStream::reduce(std::function<int(int, int)> f) {
-	for (auto i = left; i + 1 != right; ++i)
-	{
-		*(i + 1) = f(*(i), *(i + 1));
-	}
-	return *(right - 1);
-};
 Stream::IntStream Stream::IntStream::iterator(std::function<int(int)> f, int initialize, int num) {
 	std::vector<int> vec;
 	for (int i = 0; i < num; i++)
