@@ -18,7 +18,7 @@
 [[noreturn]]void Stream::IntStream::set(std::vector<int> v) {
 	vector_ = v;
 	left = vector_.begin();
-	right = vector_.end();
+	right = vector_.end();	
 }
 [[nodiscard]]int Stream::IntStream::sum() noexcept {
 	int acc = 0;
@@ -35,9 +35,8 @@ Stream::IntStream Stream::IntStream::iterator(std::function<int(int)> f, int ini
 		vec.push_back(initialize);
 		initialize = f(initialize);
 	}
-	IntStream s;
-	s.set(vec);
-	return s;
+	this->set(vec);
+	return *this;
 };
 Stream::IntStream Stream::IntStream::map (Stream_::Wrapper<int>(*function)(Stream_::Wrapper<int> v)) noexcept {
 	for (auto i = left; i != right; ++i)
