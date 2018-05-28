@@ -1,1 +1,3 @@
-﻿  Client_SFML.vcxproj -> C:\Users\haho6\Desktop\A-\Client_SFML\Debug\Client_SFML.exe
+﻿Client_SFML.obj : error LNK2019: "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(void)" (__imp_??0RenderWindow@sf@@QAE@XZ) 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+Client_SFML.obj : error LNK2019: "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ) 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+C:\Users\haho6\Desktop\A-\Client_SFML\Debug\Client_SFML.exe : fatal error LNK1120: 2개의 확인할 수 없는 외부 참조입니다.
