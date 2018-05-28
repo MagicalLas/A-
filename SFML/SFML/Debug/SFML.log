@@ -1,0 +1,4 @@
+﻿  소스.cpp
+소스.obj : error LNK2019: "__declspec(dllimport) public: __thiscall sf::Window::Window(void)" (__imp_??0Window@sf@@QAE@XZ) 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+소스.obj : error LNK2019: "__declspec(dllimport) public: virtual __thiscall sf::Window::~Window(void)" (__imp_??1Window@sf@@UAE@XZ) 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+C:\Users\haho6\Desktop\A-\SFML\Debug\SFML.exe : fatal error LNK1120: 2개의 확인할 수 없는 외부 참조입니다.
