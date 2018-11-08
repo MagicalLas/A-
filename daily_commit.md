@@ -525,3 +525,4 @@
 2018/11/5 : Daily commit sucsessfuly  
 2018/11/6 : Daily commit sucsessfuly  
 2018/11/7 : Daily commit sucsessfuly  
+2018/11/8 : Daily commit sucsessfuly  
